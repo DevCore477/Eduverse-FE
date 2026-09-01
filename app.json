@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "nedjmati-app",
+    "slug": "nedjmati-app",
+    "version": "1.1.2",
+    "orientation": "portrait",
+    "scheme": "nedjmatiapp",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nedjmati.nedjmatiapp"
+    },
+    "android": {
+      "versionCode": 16,
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.nedjmati.nedjmatiapp",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-firebase/app",
+      "@react-native-firebase/messaging",
+      "@react-native-firebase/crashlytics",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#fff",
+          "image": "./assets/images/NedjmatiSplashLogo2.png",
+          "dark": {
+            "image": "./assets/images/NedmatiSplashLogo2.png",
+            "backgroundColor": "#262626"
+          },
+          "imageWidth": 240
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e206428a-297b-4631-89ea-551e68dc5dd3"
+      }
+    }
+  }
+}
