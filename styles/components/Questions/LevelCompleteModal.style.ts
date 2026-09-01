@@ -1,0 +1,108 @@
+import { StyleSheet } from "react-native";
+
+export const styles = (theme: any) =>
+  StyleSheet.create({
+    overlay: {
+      flex: 1,
+      backgroundColor: "rgba(0, 0, 0, 0.75)",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    modalContainer: {
+      padding: 35,
+      paddingBottom: 10,
+      width: 360,
+      height: 480,
+      alignItems: "center",
+      position: "relative",
+      overflow: "hidden",
+      justifyContent: "center",
+    },
+    backgroundSvg: {
+      position: "absolute",
+      top: 0,
+      left: 0,
+    },
+    closeButton: {
+      position: "absolute",
+      top: 60,
+      right: 20,
+      zIndex: 100,
+      shadowColor: "#000000",
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.3,
+      shadowRadius: 8,
+      elevation: 8,
+    },
+    closeButtonInner: {
+      width: 38,
+      height: 38,
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    medalsContainer: {
+      flexDirection: "row",
+      alignItems: "flex-end",
+      justifyContent: "center",
+      marginTop: 40,
+      // marginBottom: 20,
+      height: 120,
+      zIndex: 1,
+    },
+    medalWrapper: {
+      alignItems: "center",
+    },
+    centerMedal: {
+      marginBottom: 20,
+    },
+    congratsText: {
+      fontSize: 28,
+      fontWeight: "700",
+      color: "#FFFFFF",
+      textAlign: "center",
+      zIndex: 1,
+    },
+    levelText: {
+      fontSize: 14,
+      fontWeight: "700",
+      color: "#FFFFFF",
+      textAlign: "center",
+      marginBottom: 30,
+      zIndex: 1,
+    },
+    scoreContainer: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 12,
+      marginBottom: 25,
+      zIndex: 1,
+    },
+    scoreText: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: "#FFFFFF",
+    },
+    percentageText: {
+      fontSize: 22,
+      fontWeight: "700",
+      color: "#FFDE3C",
+    },
+    nextButton: {
+      paddingVertical: 12,
+      paddingHorizontal: 30,
+      borderRadius: 14,
+      zIndex: 1,
+      marginBottom: 70,
+      shadowColor: "#000000",
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.3,
+      shadowRadius: 8,
+      elevation: 8,
+    },
+    nextButtonText: {
+      fontSize: 16,
+      fontWeight: "700",
+      color: "#ffff",
+      textAlign: "center",
+    },
+  });
